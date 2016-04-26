@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+</head>
+<body>
+<div id="loginEmail" datarole="page">
+	<div class="ui-content" role="main">
+		<label for="email">Enter your Email</label>
+		<input type="text" id="email" name="email" class="ui-input-text ui-corner-all ui-shadow-inset"></input>
+		<a href="#loginPassword" class="ui-btn" data-transition="slideup">Next</a>
+	</div>
+</div>
+
+<div id="loginPassword" data-role="page">
+	<div class="ui-content" role="main">
+		<label for="email">Enter your Email</label>
+		<input type="text" id="email" name="email" class="ui-input-text ui-corner-all ui-shadow-inset"></input>
+		<label for="password">Enter your Password</label>
+		<input type="password" id="password" name="passwprd" class="ui-input-text ui-corner-all ui-shadow-inset"></input>
+		<a href="#myMaps" class="ui-btn" data-transition="slideup">Login</a>
+	</div>
+</div>
+
+<div id="myMaps" data-role="page">
+	<div class="ui-content" role="main">
+		<a href="#myMap" class="ui-btn" data-transition="slideup">France</a>
+		<a href="#myMap" class="ui-btn" data-transition="slideup">Brazil</a>
+		<a href="#myMap" class="ui-btn" data-transition="slideup">Mexico</a>
+		<a href="#myMap" class="ui-btn" data-transition="slideup">Colorado</a>
+	</div>
+</div>
+
+<div id="myMap" data-role="page">
+	<div class="ui-content" role="main">
+		<a href="#food" class="ui-btn" data-transition="slideup">Food</a>
+		<a href="#sites" class="ui-btn" data-transition="slideup">Sites</a>
+		<a href="#lodging" class="ui-btn" data-transition="slideup">Lodging</a>
+		<a href="#transport" class="ui-btn" data-transition="slideup">Transportation</a>
+	</div>
+</div>
+
+<div id="food" data-role="page">
+	<div class="ui-content" data-role="main">
+		<a href="#restaurant" class="ui-btn" data-rel="popup">Restaurant</a>
+		<a href="#restaurant" class="ui-btn" data-rel="popup">Restaurant</a>
+		<a href="#restaurant" class="ui-btn" data-rel="popup">Restaurant</a>
+		<a href="#restaurant" class="ui-btn" data-rel="popup">Restaurant</a>
+		<div data-role="popup" id="restaurant" >
+			<p>Hours: </p>
+			<p>Phone: </p>
+			<p>Price: </p>
+			<p>Reviews: </p>
+			<p>Website:</p> 
+		</div>
+	</div>
+</div>
+
+<div id="sites" data-role="page">
+	<div class="ui-content" data-role="main">
+		<a href="#site" class="ui-btn" data-rel="popup">Leaning Tower</a>
+		<a href="#site" class="ui-btn" data-rel="popup">Pyramids</a>
+		<a href="#site" class="ui-btn" data-rel="popup">Taj Mahal</a>
+		<a href="#site" class="ui-btn" data-rel="popup">Home</a>
+		<div data-role="popup" id="site" >
+			<p>Hours: </p>
+			<p>Phone: </p>
+			<p>Price: </p>
+			<p>Reviews: </p>
+			<p>Website:</p> 
+		</div>
+	</div>
+</div>
+
+<div id="lodging" data-role="page">
+	<div class="ui-content" data-role="main">
+		<div class="ui-content" data-role="main">
+			<a href="#room" class="ui-btn" data-rel="popup">Hostel</a>
+			<a href="#room" class="ui-btn" data-rel="popup">Fancy Room</a>
+			<div data-role="popup" id="room" >
+				<p>Hours: </p>
+				<p>Phone: </p>
+				<p>Price: </p>
+				<p>Reviews: </p>
+				<p>Website:</p> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="transport" data-role="page">
+	<div class="ui-content" data-role="main">
+		<div class="ui-content" data-role="main">
+			<a href="#vehicle" class="ui-btn" data-rel="popup">Train</a>
+			<a href="#vehicle" class="ui-btn" data-rel="popup">Bus</a>
+			<a href="#vehicle" class="ui-btn" data-rel="popup">Taxi</a>
+			<a href="#vehicle" class="ui-btn" data-rel="popup">Ferry</a>
+			<a href="#vehicle" class="ui-btn" data-rel="popup">Plane</a>
+			<div data-role="popup" id="vehicle" >
+				<p>Hours: </p>
+				<p>Phone: </p>
+				<p>Price: </p>
+				<p>Reviews: </p>
+				<p>Website:</p> 
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
