@@ -1,100 +1,100 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<title></title>
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8888/ -->
+<html class="ui-mobile"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><!--<base href="http://localhost:8888/">--><base href=".">
+		<title>Login</title>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href='https://fonts.googleapis.com/css?family=Lato:100|Josefin+Slab|Playfair+Display' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="./Login_files/jqmobile.min.css">
 
-		<link rel="stylesheet" type="text/css" href="js/jquery/mobile/jqmobile.min.css">
+		<link rel="stylesheet" type="text/css" href="./Login_files/jqui.min.css">
 
-		<link rel="stylesheet" type="text/css" href="js/jquery/ui/jqui.min.css">
-
-		<link rel="stylesheet" type="text/css" href="css/neutral.css">
-
-		<link rel="stylesheet" type="text/css" href="css/master.css">
-
-		<script src="js/jquery/jquerymin.js"></script>
-
-		<script src="js/jquery/mobile/jqmobile.minjs.js"></script>
-
-		<script src="js/jquery/ui/jqui.minjs.js"></script>
+		<link rel="stylesheet" type="text/css" href="./Login_files/master.css">
 		
-		<script src="http://maps.google.com/maps/api/js?key=AIzaSyCq9JRLgL2ATvunEN0vRZ7g3fBeBiVznUo"></script>
-		<script type="text/javascript" src="js/jquery/jquery.gmap.js"></script>
+		<script src="./Login_files/jquerymin.js"></script>
 
-		<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.0/src/infobox_packed.js"></script>
+		<script src="./Login_files/jqmobile.minjs.js"></script>
 
-		<script src="js/mapScript.js"></script>
+		<script src="./Login_files/jqui.minjs.js"></script>
+		
+		<script src="./Login_files/js"></script>
+		<script type="text/javascript" src="./Login_files/jquery.gmap.js"></script>
 
-	</head>
-	<body>
+		<script type="text/javascript" src="./Login_files/infobox_packed.js"></script>
 
-	<!-/**************************************
+		<script src="./Login_files/mapScript.js"></script>
+
+	<script type="text/javascript" charset="UTF-8" src="./Login_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./Login_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./Login_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./Login_files/AuthenticationService.Authenticate"></script></head>
+	<body class="ui-mobile-viewport ui-overlay-a">
+
+	<!---/**************************************
+	*
+	*
 	*Login Page
-	***************************************/->
-	<div id="loginPassword" data-role="page">
-		<div data-role="header" id="hdr">
-			<h1>Login</h1>
+	*
+	*
+	***************************************/--->
+
+	<div id="loginPassword" data-role="page" data-url="loginPassword" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 634px;">
+		<div data-role="header" id="loginHeader" role="banner" class="ui-header ui-bar-inherit">
+			<h1 class="ui-title" role="heading" aria-level="1">Login</h1>
 		</div>
 		<div class="ui-content" role="main">
 			<label for="email">Enter your Email</label>
-			<input type="text" id="email" name="email" class="ui-input-text ui-corner-all ui-shadow-inset"></input>
+			<div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input type="text" id="email" name="email" class="ui-input-text ui-corner-all ui-shadow-inset"></div>
 			<label for="password">Enter your Password</label>
-			<input type="password" id="password" name="passwprd" class="ui-input-text ui-corner-all ui-shadow-inset"></input>
-			<a href="#myMaps" class="ui-btn" data-transition="slideup">Login</a>
+			<div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input type="password" id="password" name="passwprd" class="ui-input-text ui-corner-all ui-shadow-inset"></div>
+			<a href="http://localhost:8888/#myMaps" class="ui-btn" data-transition="slideup">Login</a>
 		</div>
 	</div>
 
-
-	<!-/**************************************
+	<!---/**************************************
+	*
+	*
 	*my maps Page
-	***************************************/->
-	<div id="myMaps" data-role="page">
-		<div data-role="header" id="hdr">
-			<h1>Maps</h1>
-			<a href="#loginPassword" class="ui-btn-right">Logout</a>
+	*
+	*
+	***************************************/--->
+
+	<div id="myMaps" data-role="page" data-url="myMaps" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 678px;">
+		<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+			<h1 class="ui-title" role="heading" aria-level="1">Select Map</h1>
+			<a href="http://localhost:8888/#loginPassword" class="ui-btn-right ui-link ui-btn ui-shadow ui-corner-all" data-role="button" role="button">Logout</a>
 		</div>
 			<div class="ui-content" role="main">
-				<a href="#myMap" class="ui-btn" data-transition="slideup" id="France" name="France">France</a>
-				<a href="#myMap" class="ui-btn" data-transition="slideup" id="Brazil" name="Brazil">Brazil</a>
-				<a href="#myMap" class="ui-btn" data-transition="slideup" id="Mexico" name="Mexico">Mexico</a>
-				<a href="#myMap" class="ui-btn" data-transition="slideup" id="Colorado" name="Colorado">Colorado</a>
-				<a href="#map-page" class="ui-btn" data-transition="slideup">Add Map</a>		
+				<a href="http://localhost:8888/#myMap" class="ui-btn" data-transition="slideup">France</a>
+				<a href="http://localhost:8888/#myMap" class="ui-btn" data-transition="slideup">Brazil</a>
+				<a href="http://localhost:8888/#myMap" class="ui-btn" data-transition="slideup">Mexico</a>
+				<a href="http://localhost:8888/#myMap" class="ui-btn" data-transition="slideup">Colorado</a>
+				<a href="http://localhost:8888/#map-page" class="ui-btn" data-transition="slideup">Add Map</a>		
 			</div>
 	</div>
 
-
-	<!-/**************************************
+	<!---/**************************************
 	*Sites Page
-	***************************************/->
-	<div id="myMap" data-role="page">
-		<div data-role="header" id="hdr">
-			<a href="#myMaps">Back</a>
-			<h1>
-				<span id="clickedName"></span>
-			</h1>
-			<a href="#loginPassword">Logout</a>
+	***************************************/--->
+	<div id="myMap" data-role="page" data-url="myMap">
+		<div data-role="header">
+			<a href="http://localhost:8888/#myMaps">Back</a>
+			<h1>Your Map</h1>
+			<a href="http://localhost:8888/#loginPassword">Logout</a>
 		</div>
 		<div class="ui-content" role="main">
-			<a href="#site-page" class="ui-btn" data-transition="slideup" id="Food">Food</a>
-			<a href="#site-page" class="ui-btn" data-transition="slideup" id="Tourist Sites">Tourist Sites</a>
-			<a href="#site-page" class="ui-btn" data-transition="slideup" id="Lodging">Lodging</a>
-			<a href="#site-page" class="ui-btn" data-transition="slideup" id="Transportation">Transportation</a>
+			<a href="http://localhost:8888/#food-page" class="ui-btn" data-transition="slideup">Food</a>
+			<a href="http://localhost:8888/#site-page" class="ui-btn" data-transition="slideup">Sites</a>
+			<a href="http://localhost:8888/#hotel-page" class="ui-btn" data-transition="slideup">Lodging</a>
+			<a href="http://localhost:8888/#transport-page" class="ui-btn" data-transition="slideup">Transportation</a>
 		</div>
 	</div>
 
 
-	<!-/**************************************
+	<!---/**************************************
 	*food Page
-	***************************************/->
-	<div data-role="page" id="site-page" data-url="food-page">
-	    <div data-role="header" data-position="fixed" id="hdr">
-	    	<a href="#myMap">Back</a>
-	    	<h1>
-	    		<span id="headName"></span>
-	    	</h1>
+	***************************************/--->
+	<div data-role="page" id="food-page" data-url="food-page">
+	    <div data-role="header" data-position="fixed">
+	    	<a href="http://localhost:8888/#myMap">Back</a>
+	    	<h1>Food Options</h1>
 	            <div class="segmented-control ui-bar-d">
 	            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
 	                <input type="radio" name="switch" id="list-switch" checked="true">
@@ -103,7 +103,7 @@
 	                <label for="map-switch">Map</label>
 	            </fieldset>
 	            </div>
-	        <a href="#loginPassword">Logout</a>
+	        <a href="http://localhost:8888/#loginPassword">Logout</a>
 	    </div>
 	    <div role="main" class="ui-content ui-content-list">
 	        <div id="list-canvas">
@@ -111,10 +111,10 @@
 	                <li data-marker-info="48.856614,2.3522219">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Restaurant 1</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Restaurant 1</a></h1>
 	                        </div>
 	                      </div>
-		                  <a href="#restPop1" data-rel="popup">
+		                  <a href="http://localhost:8888/#restPop1" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Restaurant 1</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -124,18 +124,18 @@
 		                  	<p>Hours: Open</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88277959,2.43415833">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Restaurant 2</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Restaurant 2</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#restPop2" data-rel="popup">
+	                      <a href="http://localhost:8888/#restPop2" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Restaurant 2</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -145,18 +145,18 @@
 		                  	<p>Hours: Open</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.86480,2.33927">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Restaurant 3</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Restaurant 3</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#restPop3" data-rel="popup">
+	                      <a href="http://localhost:8888/#restPop3" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Restaurant 3</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -166,18 +166,18 @@
 		                  	<p>Hours: Closed</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88111,2.32957">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Restaurant 4</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Restaurant 4</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#restPop4" data-rel="popup">
+	                      <a href="http://localhost:8888/#restPop4" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Restaurant 4</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -187,18 +187,18 @@
 		                  	<p>Hours: 7AM-3PM</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88862,2.34592">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Restaurant 5</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Restaurant 5</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#restPop5" data-rel="popup">
+	                      <a href="http://localhost:8888/#restPop5" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Restaurant 5</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -208,9 +208,9 @@
 		                  	<p>Hours: 11AM-10:30PM</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	            </ul>
@@ -220,12 +220,12 @@
 	</div>
 
 
-	<!-/**************************************
+	<!---/**************************************
 	*site Page
-	***************************************/->
+	***************************************/--->
 	<div data-role="page" id="site-page" data-url="site-page">
-	    <div data-role="header" data-position="fixed" id="hdr">
-	        <a href="#myMap">Back</a>
+	    <div data-role="header" data-position="fixed">
+	        <a href="http://localhost:8888/#myMap">Back</a>
 	    	<h1>Tourist Attractions</h1>
 	            <div class="segmented-control ui-bar-d">
 	            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
@@ -235,7 +235,7 @@
 	                <label for="map-switch">Map</label>
 	            </fieldset>
 	            </div>
-	        <a href="#loginPassword">Logout</a>
+	        <a href="http://localhost:8888/#loginPassword">Logout</a>
 	    </div>
 	    <div role="main" class="ui-content ui-content-list">
 	        <div id="list-canvas" class="list-canvas">
@@ -243,10 +243,10 @@
 	                <li data-marker-info="48.856614,2.3522219">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Site 1</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Site 1</a></h1>
 	                        </div>
 	                      </div>
-		                  <a href="#sitePop1" data-rel="popup">
+		                  <a href="http://localhost:8888/#sitePop1" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Site 1</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -256,18 +256,18 @@
 		                  	<p>Hours: Open</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88277959,2.43415833">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Site 2</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Site 2</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop2" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop2" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Site 2</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -277,18 +277,18 @@
 		                  	<p>Hours: Open</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.86480,2.33927">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Site 3</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Site 3</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop3" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop3" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Site 3</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -298,18 +298,18 @@
 		                  	<p>Hours: Closed</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88111,2.32957">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Site 4</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Site 4</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop4" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop4" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Site 4</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -319,18 +319,18 @@
 		                  	<p>Hours: 7AM-3PM</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88862,2.34592">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Site 5</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Site 5</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop5" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop5" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Site 5</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -340,9 +340,9 @@
 		                  	<p>Hours: 11AM-10:30PM</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	            </ul>
@@ -352,12 +352,12 @@
 	</div>
 
 
-	<!-/**************************************
+	<!---/**************************************
 	*hotels Page
-	***************************************/->
+	***************************************/--->
 	<div data-role="page" id="hotel-page" data-url="hotel-page">
-	    <div data-role="header" data-position="fixed" id="hdr">
-	        <a href="#myMap">Back</a>
+	    <div data-role="header" data-position="fixed">
+	        <a href="http://localhost:8888/#myMap">Back</a>
 	    	<h1>Lodging</h1>
 	            <div class="segmented-control ui-bar-d">
 	            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
@@ -367,7 +367,7 @@
 	                <label for="map-switch">Map</label>
 	            </fieldset>
 	            </div>
-	        <a href="#loginPassword">Logout</a>
+	        <a href="http://localhost:8888/#loginPassword">Logout</a>
 
 	    </div>
 	    <div role="main" class="ui-content ui-content-list">
@@ -376,10 +376,10 @@
 	                <li data-marker-info="48.856614,2.3522219">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">hotel 1</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">hotel 1</a></h1>
 	                        </div>
 	                      </div>
-		                  <a href="#sitePop1" data-rel="popup">
+		                  <a href="http://localhost:8888/#sitePop1" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">hotel 1</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -389,18 +389,18 @@
 		                  	<p>Hours: Open</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88277959,2.43415833">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">hotel 2</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">hotel 2</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop2" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop2" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">hotel 2</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -410,18 +410,18 @@
 		                  	<p>Hours: Open</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.86480,2.33927">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">hotel 3</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">hotel 3</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop3" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop3" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">hotel 3</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -431,18 +431,18 @@
 		                  	<p>Hours: Closed</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88111,2.32957">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">hotel 4</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">hotel 4</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop4" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop4" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">hotel 4</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -452,18 +452,18 @@
 		                  	<p>Hours: 7AM-3PM</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88862,2.34592">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">hotel 5</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">hotel 5</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop5" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop5" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">hotel 5</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -473,9 +473,9 @@
 		                  	<p>Hours: 11AM-10:30PM</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	            </ul>
@@ -485,12 +485,12 @@
 	</div>
 
 
-	<!-/**************************************
+	<!---/**************************************
 	*transportation Page
-	***************************************/->
+	***************************************/--->
 	<div data-role="page" id="transport-page" data-url="transport-page">
-	    <div data-role="header" data-position="fixed" id="hdr">
-	        <a href="#myMap">Back</a>
+	    <div data-role="header" data-position="fixed">
+	        <a href="http://localhost:8888/#myMap">Back</a>
 	    	<h1>Transportation</h1>
 	            <div class="segmented-control ui-bar-d">
 	            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
@@ -500,7 +500,7 @@
 	                <label for="map-switch">Map</label>
 	            </fieldset>
 	            </div>
-	        <a href="#loginPassword">Logout</a>
+	        <a href="http://localhost:8888/#loginPassword">Logout</a>
 
 	    </div>
 	    <div role="main" class="ui-content ui-content-list">
@@ -509,10 +509,10 @@
 	                <li data-marker-info="48.856614,2.3522219">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Taxi</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Taxi</a></h1>
 	                        </div>
 	                      </div>
-		                  <a href="#sitePop1" data-rel="popup">
+		                  <a href="http://localhost:8888/#sitePop1" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Taxi</h1>
 		                    <div class="ui-li-count">
 		                      <span>0.71 miles</span>
@@ -522,18 +522,18 @@
 		                  	<p>Hours: Open</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88277959,2.43415833">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Train</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Train</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop2" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop2" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Train</h1>
 		                    <div class="ui-li-count">
 		                      <span>1.5 miles</span>
@@ -543,18 +543,18 @@
 		                  	<p>Hours: Open</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.86480,2.33927">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Air</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Air</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop3" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop3" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Air</h1>
 		                    <div class="ui-li-count">
 		                      <span>28 miles</span>
@@ -564,18 +564,18 @@
 		                  	<p>Hours: Closed</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88111,2.32957">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Rental Car</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Rental Car</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop4" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop4" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Rental Car</h1>
 		                    <div class="ui-li-count">
 		                      <span>4 miles</span>
@@ -585,18 +585,18 @@
 		                  	<p>Hours: 7AM-3PM</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	                <li data-marker-info="48.88862,2.34592">
 	                      <div style="display:none;">
 	                        <div class="ui-gmap-marker-info">
-	                          <h1><a id="gmap-marker-link" href="#">Boat</a></h1>
+	                          <h1><a id="gmap-marker-link" href="http://localhost:8888/#">Boat</a></h1>
 	                        </div>
 	                      </div>
-	                      <a href="#sitePop5" data-rel="popup">
+	                      <a href="http://localhost:8888/#sitePop5" data-rel="popup">
 		                    <h1 class="ui-gmap-marker-title wrap">Boat</h1>
 		                    <div class="ui-li-count">
 		                      <span>13.76 miles</span>
@@ -606,9 +606,9 @@
 		                  	<p>Hours: 11AM-10:30PM</p>
 		                  	<p>Price: $$</p>
 		                  	<p>Phone: (908)-555-5555</p>
-		                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-		                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
-		                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+		                  	<p><a href="http://localhost:8888/www.mcdonalds.com" data-role="button">Website</a></p>
+		                  	<p><a href="http://localhost:8888/#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+		                  	<p><a href="http://localhost:8888/#map-page" data-role="button">Directions</a></p>
 		                  </div>
 	                    </li>
 	            </ul>
@@ -618,17 +618,17 @@
 	</div>
 
 
-	<!-/**************************************
+	<!---/**************************************
 	*Map Page
-	***************************************/->
+	***************************************/--->
 	<div data-role="page" id="map-page" data-url="map-page">
-	    <div data-role="header" id="hdr">
-	    	<a href="#myMaps" class="ui-btn">Back</a>
+	    <div data-role="header" data-theme="a">
+	    	<a href="http://localhost:8888/#myMaps" class="ui-btn">Back</a>
 	    	<h1>Map</h1>
 	    	<div class="ui-field-contain">
-		    	<input type="search" id="mapSearch"></input>
-		    	</br>	
-		    	<a href="#" class="ui-btn" id="mapFind">Find</a>
+		    	<input type="search" id="mapSearch">
+		    	<br>	
+		    	<a href="http://localhost:8888/#" class="ui-btn" id="mapFind">Find</a>
 		    </div>
 	    </div>
 	    <div role="main" class="ui-content" id="mapCanvas">
@@ -637,20 +637,20 @@
 	</div>
 
 
-	<!-/**************************************
+	<!---/**************************************
 	*Reviews Page
-	***************************************/->
-	<div data-role="page" id="reviews">
-		<div data-role="header" id="hdr">
+	***************************************/--->
+	<div data-role="page" id="reviews" data-url="reviews">
+		<div data-role="header">
 		    <h1>Reviews</h1>
 		</div>
 	    <div role="main" class="ui-content">
 	        
 	    </div>
 	    <div data-role="footer">
-	    	<a href="#" data-icon="arrow-l" class="ui-btn-left">Back</a>
-	    	<a href="#" data-icon="arrow-r" class="ui-btn-right">Next</a>
+	    	<a href="http://localhost:8888/#" data-icon="arrow-l" class="ui-btn-left">Back</a>
+	    	<a href="http://localhost:8888/#" data-icon="arrow-r" class="ui-btn-right">Next</a>
 	    </div>
 	</div>
-	</body>
-	</html>
+	
+	<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div></body></html>

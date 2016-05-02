@@ -1,9 +1,9 @@
-#hdr {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: 2em; }
-  #hdr a {
-    font-size: .45em; }
+body {
+  color: #FCFFF5; }
+
+input, .ui-btn {
+  color: #3E606F;
+  font-color: #91AA9D; }
 
 #map-page, #mapCanvas {
   width: 100%;
