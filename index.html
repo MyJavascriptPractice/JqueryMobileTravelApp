@@ -28,6 +28,7 @@
 
 		<script src="js/mapScript.js"></script>
 
+
 	</head>
 	<body>
 
@@ -63,6 +64,13 @@
 				<a href="#myMap" class="ui-btn" data-transition="slideup" id="Colorado" name="Colorado">Colorado</a>
 				<a href="#map-page" class="ui-btn" data-transition="slideup">Add Map</a>		
 			</div>
+				<script type="text/javascript">
+					$("[href='#myMap']").click(function(event) {
+    					name = $(this).attr('id');
+  						$("#clickedName").text(name);
+   
+				});
+				</script>
 	</div>
 
 
@@ -83,6 +91,22 @@
 			<a href="#site-page" class="ui-btn" data-transition="slideup" id="Lodging">Lodging</a>
 			<a href="#site-page" class="ui-btn" data-transition="slideup" id="Transportation">Transportation</a>
 		</div>
+		<script type="text/javascript">
+			$("[href='#site-page']").click(function(event) {
+    			siteName = $(this).attr('id');
+    			splitWord = siteName.split(" ");
+    			if (splitWord.length >= 2) {
+    				$("#firstName").text(splitWord[0]);
+    				$("#secName").text(splitWord[1]);
+    			}else if ((siteName.split("").length) > 7) {
+    				$("#firstName").text(siteName);
+    				$("#secName").text('');
+    			}else{
+    				$("#secName").text('');
+   					$("#firstName").text(siteName);
+   				}
+			});
+		</script>
 	</div>
 
 
@@ -93,7 +117,9 @@
 	    <div data-role="header" data-position="fixed" id="hdr">
 	    	<a href="#myMap">Back</a>
 	    	<h1>
-	    		<span id="headName"></span>
+	    		<span id="firstName"></span>
+	    		</br>
+	    		<span id="secName"></span>
 	    	</h1>
 	            <div class="segmented-control ui-bar-d">
 	            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
@@ -223,7 +249,7 @@
 	<!-/**************************************
 	*site Page
 	***************************************/->
-	<div data-role="page" id="site-page" data-url="site-page">
+<!-- 	<div data-role="page" id="site-page" data-url="site-page">
 	    <div data-role="header" data-position="fixed" id="hdr">
 	        <a href="#myMap">Back</a>
 	    	<h1>Tourist Attractions</h1>
@@ -349,7 +375,7 @@
 	        </div>
 	    </div>
 	    <div role="main" class="ui-content ui-gmap map-canvas" id="map-canvas" data-initial-view="48.80,2.16,16" style="display:none;"></div>
-	</div>
+	</div> -->
 
 
 	<!-/**************************************

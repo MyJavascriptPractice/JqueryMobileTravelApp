@@ -4,6 +4,9 @@
   font-size: 2em; }
   #hdr a {
     font-size: .45em; }
+  #hdr .ui-title {
+    padding-top: 2em;
+    margin: 0; }
 
 #map-page, #mapCanvas {
   width: 100%;

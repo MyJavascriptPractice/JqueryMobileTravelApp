@@ -40,31 +40,31 @@ $( document ).on( "pageinit", "#map-page", function() {
 *
 ***************************************/
 
-// $( document ).on( "pagecreate", "#site-page" , function() {
-//     var $mapSwitch = $( "#map-switch" ),
-//         $listSwitch = $( "#list-switch" ),
-//         $map = $( "#map-canvas" ),
-//         $list = $( "#list-canvas" );
-//     $mapSwitch.on( "click", function( e ){
-//         $map.show();
-//         $map.gmap();
-//         $list.hide();
-//     });
-//     $listSwitch.on( "click", function( e ){
-//         $list.show();
-//         $map.hide();
-//     });
-//     $( "#show-more a" ).on( "click", function( e ){
-//         // Assume we already have a cached geolocation because it's not necessary for this example.
-//         var location = location || {};
-//             location.coords = location.coords || {};
-//             location.coords.latitude = location.coords.latitude || {};
-//             location.coords.longitude = location.coords.longitude || {};
-//         JQM.geo.startIndex = $( "#list-results li" ).size() -1; // exclude show more list item
-//         JQM.geo.showMore( location );
-//         e.preventDefault();
-//     });
-// });
+$( document ).on( "pagecreate", "#site-page" , function() {
+    var $mapSwitch = $( "#map-switch" ),
+        $listSwitch = $( "#list-switch" ),
+        $map = $( "#map-canvas" ),
+        $list = $( "#list-canvas" );
+    $mapSwitch.on( "click", function( e ){
+        $map.show();
+        $map.gmap();
+        $list.hide();
+    });
+    $listSwitch.on( "click", function( e ){
+        $list.show();
+        $map.hide();
+    });
+    $( "#show-more a" ).on( "click", function( e ){
+        // Assume we already have a cached geolocation because it's not necessary for this example.
+        var location = location || {};
+            location.coords = location.coords || {};
+            location.coords.latitude = location.coords.latitude || {};
+            location.coords.longitude = location.coords.longitude || {};
+        JQM.geo.startIndex = $( "#list-results li" ).size() -1; // exclude show more list item
+        JQM.geo.showMore( location );
+        e.preventDefault();
+    });
+});
 
 /**
  * Geolocation configuration
@@ -98,13 +98,30 @@ JQM.geo = {
 /**************************************
 *
 *
-*header info - finds link clicked and displays in page header
+*header info
 *
 *
 ***************************************/
+$("[href='#myMap']").click(function(event) {
+    name = $(this).attr('id');
+    console.log(name);
+   $("#clickedName").text(name);
+   
+});
+// function findName () {
+//     var names;
+//     $('a').onclick = function() {
+//         names = this.attr('id');
+//     }
+//     return names;
+// };
 
-
-// $("[href='#site-page']").click(function(event) {
-//     var site = $(this).attr('id');
-//    $("#headName").text(site);
-// });
+// $("#Brazil").click(function() {
+//         name = $(this).attr('id');
+//     })
+//     $("#Mexico").click(function() {
+//         name = $(this).attr('id');
+//     })
+//     $("#Colorado").click(function() {
+//         name = $(this).attr('id');
+//     })
