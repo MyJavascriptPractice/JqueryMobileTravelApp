@@ -5240,9 +5240,12 @@ body, input, select, textarea, button, a.ui-btn {
   line-height: 1.6;
   font-family: "Josefin Slab", serif; }
 
-legend, .ui-input-text input, .ui-input-search input {
+legend, .ui-input-text, .ui-input-search {
   color: inherit;
-  text-shadow: inherit; }
+  text-shadow: inherit;
+  margin: 0; }
+  legend input, .ui-input-text input, .ui-input-search input {
+    margin: 0; }
 
 /* Form labels (overrides font-weight bold in bars, and mini font-size) */
 .ui-mobile label, div.ui-controlgroup-label {
@@ -5283,6 +5286,7 @@ legend, .ui-input-text input, .ui-input-search input {
 /* Buttons
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn, label.ui-btn {
+  margin: .5em 0;
   /*font-weight: bold;*/
   border-width: 1px;
   border-style: solid; }
@@ -5714,7 +5718,7 @@ legend, .ui-input-text input, .ui-input-search input {
 #map-canvas {
   width: 100%;
   height: 100%;
-  margin-top: -30px;
+  margin-top: -45px;
   padding: 0px !important; }
 
 #gmap-marker-link {
@@ -5740,23 +5744,31 @@ legend, .ui-input-text input, .ui-input-search input {
 .wrap {
   white-space: normal; }
 
-#mapSearch {
-  width: 80%;
-  margin-right: 20%; }
+.ui-field-contain {
+  padding: 0;
+  line-height: .5; }
+  .ui-field-contain #mapSearch {
+    line-height: .5;
+    font-size: .6em;
+    margin: 0 5%;
+    padding: 0; }
 
 #mapFind {
-  float: left;
-  width: 19%; }
+  display: block; }
 
 #hdr {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 2em; }
   #hdr a {
-    font-size: .45em; }
+    font-size: .45em;
+    text-align: center; }
   #hdr .ui-title {
     padding-top: 1.5em;
     padding-bottom: 0;
     margin: 0; }
+
+[id*='rand'] {
+  font-size: 1.3em; }
 
 /*# sourceMappingURL=master.css.map */

@@ -21,9 +21,14 @@ body, input, select, textarea, button, a.ui-btn {
 	line-height: 1.6;
 	font-family: 'Josefin Slab', serif /*{global-font-family}*/ ;
 }
-legend, .ui-input-text input, .ui-input-search input {
+legend, .ui-input-text, .ui-input-search {
 	color: inherit;
 	text-shadow: inherit;
+	margin: 0;
+
+	input {
+		margin: 0;
+	}
 }
 
 /* Form labels (overrides font-weight bold in bars, and mini font-size) */
@@ -67,8 +72,7 @@ legend, .ui-input-text input, .ui-input-search input {
 /* Buttons
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn, label.ui-btn {
-
-	/*font-weight: bold;*/
+	margin: .5em 0;	/*font-weight: bold;*/
 	border-width: 1px;
 	border-style: solid;
 }
