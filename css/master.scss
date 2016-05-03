@@ -82,3 +82,59 @@
 [id*='rand'] {
 	font-size: 1.3em;
 }
+#star-five {
+	// margin: 12.5px 0;
+	position: relative;
+	display: block;
+	color: red;
+	width: 0px;
+	height: 0px;
+	border-right: 12.5px solid transparent;
+	border-bottom: 8.75px  solid red;
+	border-left: 12.5px solid transparent;
+	-moz-transform: rotate(35deg);
+	-webkit-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	-o-transform: rotate(35deg);
+}
+#star-five:before {
+	border-bottom: 10px solid red;
+	border-left: 3.75px solid transparent;
+	border-right: 3.75px solid transparent;
+	position: absolute;
+	height: 0;
+	width: 0;
+	top: -5.625px;
+	left: -8.125px;
+	display: block;
+	content: '';
+	-webkit-transform: rotate(-35deg);
+	-moz-transform: rotate(-35deg);
+	-ms-transform: rotate(-35deg);
+	-o-transform: rotate(-35deg);
+}
+#star-five:after {
+	position: absolute;
+	display: block;
+	color: red;
+	top: .375px;
+	left: -13.125px;
+	width: 0px;
+	height: 0px;
+	border-right: 12.5px solid transparent;
+	border-bottom: 8.75px solid red;
+	border-left: 12.5px solid transparent;
+	-webkit-transform: rotate(-70deg);
+	-moz-transform: rotate(-70deg);
+	-ms-transform: rotate(-70deg);
+	-o-transform: rotate(-70deg);
+	content: '';
+}
+.linedUp {
+	float: left;
+	margin-bottom: 10%;
+}
+#dialogBack {
+	margin-top: 10%;
+	clear: left;
+}

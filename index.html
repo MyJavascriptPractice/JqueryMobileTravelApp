@@ -124,7 +124,7 @@
 			                  	<p>Price: $$</p>
 			                  	<p>Phone: (908)-555-5555</p>
 			                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-			                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+			                  	<p><a href="#reviews" data-position-to="window" data-role="button" data-rel="dialog">Reviews</a></p>
 			                  	<p><a href="#map-page" data-role="button">Directions</a></p>
 			                  </div>
 		                    </li>
@@ -145,7 +145,7 @@
 			                  	<p>Price: $$</p>
 			                  	<p>Phone: (908)-555-5555</p>
 			                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-			                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+			                  	<p><a href="#reviews" data-position-to="window" data-role="button" data-rel="dialog">Reviews</a></p>
 			                  	<p><a href="#map-page" data-role="button">Directions</a></p>
 			                  </div>
 		                    </li>
@@ -168,7 +168,7 @@
 			                  	<p>Price: $$</p>
 			                  	<p>Phone: (908)-555-5555</p>
 			                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-			                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+			                  	<p><a href="#reviews" data-position-to="window" data-role="button" data-rel="dialog">Reviews</a></p>
 			                  	<p><a href="#map-page" data-role="button">Directions</a></p>
 			                  </div>
 		                    </li>
@@ -189,7 +189,7 @@
 			                  	<p>Price: $$</p>
 			                  	<p>Phone: (908)-555-5555</p>
 			                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-			                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+			                  	<p><a href="#reviews" data-position-to="window" data-role="button" data-rel="dialog">Reviews</a></p>
 			                  	<p><a href="#map-page" data-role="button">Directions</a></p>
 			                  </div>
 		                    </li>
@@ -210,7 +210,7 @@
 			                  	<p>Price: $$</p>
 			                  	<p>Phone: (908)-555-5555</p>
 			                  	<p><a href="www.mcdonalds.com" data-role="button">Website</a></p>
-			                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+			                  	<p><a href="#reviews" data-position-to="window" data-role="button" data-rel="dialog">Reviews</a></p>
 			                  	<p><a href="#map-page" data-role="button">Directions</a></p>
 			                  </div>
 		                    </li>
@@ -255,17 +255,111 @@
 
 
 		<!-/**************************************
-		*Reviews Page
+		*Reviews Pages
 		***************************************/->
-		<div data-role="page" id="reviews">
+		<div data-role="page" id="reviews" data-dialog="true">
 			<div data-role="header" id="hdr">
 			    <h1>Reviews</h1>
 			</div>
-		    <div role="main" class="ui-content">
-		        
+		    <div data-role="main" class="ui-content">
+		        <p>
+		        	Good food, Good Atmosphere
+		        </p>
+		        <p>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        </p>
+		        <a href="#food-page" class="ui-btn" id="dialogBack">Back</a>
 		    </div>
 		    <div data-role="footer">
 		    	<a href="#" data-icon="arrow-l" class="ui-btn-left">Back</a>
+		    	<a href="#review2" data-icon="arrow-r" class="ui-btn-right">Next</a>
+		    </div>
+		</div>
+//pg 2
+		<div data-role="page" id="review2" data-dialog="true">
+			<div data-role="header" id="hdr">
+			    <h1>Reviews</h1>
+			</div>
+		    <div data-role="main" class="ui-content">
+		        <p>
+		        	Bad food, Good Atmosphere
+		        </p>
+		        <p>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        </p>
+		        <a href="#food-page" class="ui-btn" id="dialogBack">Back</a>
+		    </div>
+		    <div data-role="footer">
+		    	<a href="#reviews" data-icon="arrow-l" class="ui-btn-left">Back</a>
+		    	<a href="#review3" data-icon="arrow-r" class="ui-btn-right">Next</a>
+		    </div>
+		</div>
+//pg 3
+		<div data-role="page" id="review3" data-dialog="true">
+			<div data-role="header" id="hdr">
+			    <h1>Reviews</h1>
+			</div>
+		    <div data-role="main" class="ui-content">
+		        <p>
+		        	Good food, Bad Atmosphere
+		        </p>
+		        <p>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        </p>
+		        <a href="#food-page" class="ui-btn" id="dialogBack">Back</a>
+		    </div>
+		    <div data-role="footer">
+		    	<a href="#review2" data-icon="arrow-l" class="ui-btn-left">Back</a>
+		    	<a href="#review4" data-icon="arrow-r" class="ui-btn-right">Next</a>
+		    </div>
+		</div>
+//pg 4
+		<div data-role="page" id="review4" data-dialog="true">
+			<div data-role="header" id="hdr">
+			    <h1>Reviews</h1>
+			</div>
+		    <div data-role="main" class="ui-content">
+		        <p>
+		        	Bad food, Bad Atmosphere
+		        </p>
+		        <p>
+		        	<div id="star-five" class="linedUp"></div>
+		        </p>
+		        <a href="#food-page" class="ui-btn" id="dialogBack">Back</a>
+		    </div>
+		    <div data-role="footer">
+		    	<a href="#review3" data-icon="arrow-l" class="ui-btn-left">Back</a>
+		    	<a href="#review5" data-icon="arrow-r" class="ui-btn-right">Next</a>
+		    </div>
+		</div>
+//pg 5
+		<div data-role="page" id="review5" data-dialog="true">
+			<div data-role="header" id="hdr">
+			    <h1>Reviews</h1>
+			</div>
+		    <div data-role="main" class="ui-content">
+		        <p>
+		        	Good for a beer
+		        </p>
+		        <p>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        	<div id="star-five" class="linedUp"></div>
+		        </p>
+		        <a href="#food-page" class="ui-btn" id="dialogBack">Back</a>
+		    </div>
+		    <div data-role="footer">
+		    	<a href="#review4" data-icon="arrow-l" class="ui-btn-left">Back</a>
 		    	<a href="#" data-icon="arrow-r" class="ui-btn-right">Next</a>
 		    </div>
 		</div>
