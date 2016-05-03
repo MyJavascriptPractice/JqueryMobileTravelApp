@@ -40,7 +40,7 @@ $( document ).on( "pageinit", "#map-page", function() {
 *
 ***************************************/
 
-$(document).on( "pagecreate", "#site-page" , function() {
+$(document).on( "pagecreate", "#food-page" , function() {
     var $mapSwitch = $( "#map-switch" ),
         $listSwitch = $( "#list-switch" ),
         $map = $( "#map-canvas" ),
