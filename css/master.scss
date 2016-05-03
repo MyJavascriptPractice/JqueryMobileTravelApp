@@ -24,7 +24,7 @@
 #map-canvas {
 	width: 100%;
 	height: 100%;
-	margin-top: -45px;
+	margin-top: -30px;
 	padding: 0px !important;
 }
 #gmap-marker-link {
@@ -50,19 +50,13 @@
 .wrap {
 	white-space: normal;
 }
-.ui-field-contain {
-	padding: 0;
-	line-height: .5;
-
-	#mapSearch {
-		line-height: .5;
-		font-size: .6em;
-		margin: 0 5%;
-		padding: 0;
-	}
+#mapSearch {
+	width: 80%;
+	margin-right: 20%;
 }
 #mapFind {
-	display: block;
+	float: left;
+	width: 19%;
 }
 #hdr {
 	font-family: 'Lato', sans-serif;
@@ -71,14 +65,10 @@
 
 	a {
 		font-size: .45em;
-		text-align: center;
 	}
 	.ui-title {
 		padding-top: 1.5em;
 		padding-bottom: 0;
 		margin: 0;
 	}
-}
-[id*='rand'] {
-	font-size: 1.3em;
 }
