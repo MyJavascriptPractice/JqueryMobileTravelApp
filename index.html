@@ -35,6 +35,308 @@
 				<a href="#myMaps" class="ui-btn" data-transition="slideup">Login</a>
 			</div>
 		</div>
+<<<<<<< HEAD
+</div>
+
+<!-/**************************************
+*Sites Page
+***************************************/->
+<div id="myMap" data-role="page">
+	<div data-role="header">
+		<a href="#myMaps">Back</a>
+		<h1>Your Map</h1>
+		<a href="#loginPassword">Logout</a>
+	</div>
+	<div class="ui-content" role="main">
+		<a href="#food-page" class="ui-btn" data-transition="slideup">Food</a>
+		<a href="#site" class="ui-btn" data-transition="slideup">Sites</a>
+		<a href="#hotel-page" class="ui-btn" data-transition="slideup">Lodging</a>
+		<a href="#transport-page" class="ui-btn" data-transition="slideup">Transportation</a>
+	</div>
+</div>
+
+
+<!-/**************************************
+*food Page
+***************************************/->
+<div data-role="page" id="food-page" data-url="food-page">
+    <div data-role="header" data-position="fixed">
+    	<a href="#myMap">Back</a>
+    	<h1>Food Options</h1>
+            <div class="segmented-control ui-bar-d">
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <input type="radio" name="switch" id="list-switch" checked="true">
+                <label for="list-switch">List</label>
+                <input type="radio" name="switch" id="map-switch">
+                <label for="map-switch">Map</label>
+            </fieldset>
+            </div>
+        <a href="#loginPassword">Logout</a>
+    </div>
+    <div role="main" class="ui-content ui-content-list">
+        <div id="list-canvas">
+            <ul id="list-results" data-role="listview">
+                <li data-marker-info="48.856614,2.3522219">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Restaurant 1</a></h1>
+                        </div>
+                      </div>
+	                  <a href="#restPop1" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Restaurant 1</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="restPop1">
+	                  	<p>Hours: Open</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+                <li data-marker-info="48.88277959,2.43415833">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Restaurant 2</a></h1>
+                        </div>
+                      </div>
+                      <a href="#restPop2" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Restaurant 2</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="restPop2">
+	                  	<p>Hours: Open</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+                <li data-marker-info="48.86480,2.33927">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Restaurant 3</a></h1>
+                        </div>
+                      </div>
+                      <a href="#restPop3" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Restaurant 3</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="restPop3">
+	                  	<p>Hours: Closed</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+                <li data-marker-info="48.88111,2.32957">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Restaurant 4</a></h1>
+                        </div>
+                      </div>
+                      <a href="#restPop4" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Restaurant 4</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="restPop4">
+	                  	<p>Hours: 7AM-3PM</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+                <li data-marker-info="48.88862,2.34592">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Restaurant 5</a></h1>
+                        </div>
+                      </div>
+                      <a href="#restPop5" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Restaurant 5</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="restPop5">
+	                  	<p>Hours: 11AM-10:30PM</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    <div role="main" class="ui-content ui-gmap" id="map-canvas" data-initial-view="48.80,2.16,16" style="display:none;"></div>
+</div>
+
+
+<!-/**************************************
+*site Page
+***************************************/->
+<!-- <div data-role="page" id="site-page" data-url="site-page">
+    <div data-role="header" data-position="fixed">
+        <a href="#myMap">Back</a>
+    	<h1>Tourist Attractions</h1>
+            <div class="segmented-control ui-bar-d">
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <input type="radio" name="switch" id="list-switch" checked="true">
+                <label for="list-switch">List</label>
+                <input type="radio" name="switch" id="map-switch">
+                <label for="map-switch">Map</label>
+            </fieldset>
+            </div>
+        <a href="#loginPassword">Logout</a>
+    </div>
+    <div role="main" class="ui-content ui-content-list">
+        <div id="list-canvas" class="list-canvas">
+            <ul id="list-results" class="list-results" data-role="listview">
+                <li data-marker-info="48.856614,2.3522219">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Site 1</a></h1>
+                        </div>
+                      </div>
+	                  <a href="#sitePop1" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Site 1</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="sitePop1">
+	                  	<p>Hours: Open</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+                <li data-marker-info="48.88277959,2.43415833">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Site 2</a></h1>
+                        </div>
+                      </div>
+                      <a href="#sitePop2" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Site 2</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="sitePop2">
+	                  	<p>Hours: Open</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+                <li data-marker-info="48.86480,2.33927">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Site 3</a></h1>
+                        </div>
+                      </div>
+                      <a href="#sitePop3" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Site 3</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="sitePop3">
+	                  	<p>Hours: Closed</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+                <li data-marker-info="48.88111,2.32957">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Site 4</a></h1>
+                        </div>
+                      </div>
+                      <a href="#sitePop4" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Site 4</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="sitePop4">
+	                  	<p>Hours: 7AM-3PM</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+                <li data-marker-info="48.88862,2.34592">
+                      <div style="display:none;">
+                        <div class="ui-gmap-marker-info">
+                          <h1><a id="gmap-marker-link" href="#">Site 5</a></h1>
+                        </div>
+                      </div>
+                      <a href="#sitePop5" data-rel="popup">
+	                    <h1 class="ui-gmap-marker-title wrap">Site 5</h1>
+	                    <div class="ui-li-count">
+	                      <span>0.71 miles</span>
+	                    </div>
+	                  </a>
+	                  <div data-role="popup" id="sitePop5">
+	                  	<p>Hours: 11AM-10:30PM</p>
+	                  	<p>Price: $$</p>
+	                  	<p>Phone: (908)-555-5555</p>
+	                  	<p><a href="www.mcdonalds.com">Website</a></p>
+	                  	<p><a href="#reviews" data-role="button" data-rel="dialog">Reviews</a></p>
+	                  	<p><a href="#map-page" data-role="button">Directions</a></p>
+	                  </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    <div role="main" class="ui-content ui-gmap map-canvas" id="map-canvas" data-initial-view="48.80,2.16,16" style="display:none;"></div>
+</div>
+
+ -->
+<!-/**************************************
+*hotels Page
+***************************************/->
+<div data-role="page" id="hotel-page" data-url="hotel-page">
+    <div data-role="header" data-position="fixed">
+        <a href="#myMap">Back</a>
+    	<h1>Lodging</h1>
+            <div class="segmented-control ui-bar-d">
+            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <input type="radio" name="switch" id="list-switch" checked="true">
+                <label for="list-switch">List</label>
+                <input type="radio" name="switch" id="map-switch">
+                <label for="map-switch">Map</label>
+            </fieldset>
+            </div>
+        <a href="#loginPassword">Logout</a>
+=======
 
 
 		<!-/**************************************
@@ -61,6 +363,7 @@
 					</script>
 		</div>
 
+>>>>>>> file-removal
 
 		<!-/**************************************
 		*Sites Page
