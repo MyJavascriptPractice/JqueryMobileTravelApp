@@ -899,8 +899,14 @@ html .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
   background-image: url("images/icons-png/clock-white.png"); }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .ui-nosvg .ui-icon-cloud:after {
   background-image: url("images/icons-png/cloud-white.png"); }
+=======
+legend, .ui-input-text input, .ui-input-search input {
+  color: inherit;
+  text-shadow: inherit; }
+>>>>>>> parent of b0e9292... add rand distance
 =======
 legend, .ui-input-text input, .ui-input-search input {
   color: inherit;
