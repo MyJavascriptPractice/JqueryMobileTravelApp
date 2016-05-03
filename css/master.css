@@ -898,8 +898,14 @@ html .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
 .ui-nosvg .ui-icon-clock:after {
   background-image: url("images/icons-png/clock-white.png"); }
 
+<<<<<<< HEAD
 .ui-nosvg .ui-icon-cloud:after {
   background-image: url("images/icons-png/cloud-white.png"); }
+=======
+legend, .ui-input-text input, .ui-input-search input {
+  color: inherit;
+  text-shadow: inherit; }
+>>>>>>> parent of b0e9292... add rand distance
 
 .ui-nosvg .ui-icon-comment:after {
   background-image: url("images/icons-png/comment-white.png"); }
@@ -919,8 +925,17 @@ html .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
 .ui-nosvg .ui-icon-forward:after {
   background-image: url("images/icons-png/forward-white.png"); }
 
+<<<<<<< HEAD
 .ui-nosvg .ui-icon-gear:after {
   background-image: url("images/icons-png/gear-white.png"); }
+=======
+/* Buttons
+-----------------------------------------------------------------------------------------------------------*/
+.ui-btn, label.ui-btn {
+  /*font-weight: bold;*/
+  border-width: 1px;
+  border-style: solid; }
+>>>>>>> parent of b0e9292... add rand distance
 
 .ui-nosvg .ui-icon-grid:after {
   background-image: url("images/icons-png/grid-white.png"); }
@@ -1152,7 +1167,7 @@ html .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
 #map-canvas {
   width: 100%;
   height: 100%;
-  margin-top: -45px;
+  margin-top: -30px;
   padding: 0px !important; }
 
 #gmap-marker-link {
@@ -1178,32 +1193,24 @@ html .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
 .wrap {
   white-space: normal; }
 
-.ui-field-contain {
-  padding: 0;
-  line-height: .5; }
-  .ui-field-contain #mapSearch {
-    line-height: .5;
-    font-size: .6em;
-    margin: 0 5%;
-    padding: 0; }
+#mapSearch {
+  width: 80%;
+  margin-right: 20%; }
 
 #mapFind {
-  display: block; }
+  float: left;
+  width: 19%; }
 
 #hdr {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-size: 2em; }
   #hdr a {
-    font-size: .45em;
-    text-align: center; }
+    font-size: .45em; }
   #hdr .ui-title {
     padding-top: 1.5em;
     padding-bottom: 0;
     margin: 0; }
-
-[id*='rand'] {
-  font-size: 1.3em; }
 
 /*# sourceMappingURL=master.css.map */
 >>>>>>> parent of f46cacc... finished
