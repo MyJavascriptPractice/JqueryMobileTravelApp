@@ -28,7 +28,7 @@ $( document ).on( "pageinit", "#map-page", function() {
             map: map,
             title: "Greetings!"
         });
-    }
+    };
 });
 
 
@@ -40,7 +40,7 @@ $( document ).on( "pageinit", "#map-page", function() {
 *
 ***************************************/
 
-$( document ).on( "pagecreate", "#site-page" , function() {
+$(document).on( "pagecreate", "#site-page" , function() {
     var $mapSwitch = $( "#map-switch" ),
         $listSwitch = $( "#list-switch" ),
         $map = $( "#map-canvas" ),
@@ -93,35 +93,3 @@ JQM.geo = {
         });
     }
 };
-
-
-/**************************************
-*
-*
-*header info
-*
-*
-***************************************/
-$("[href='#myMap']").click(function(event) {
-    name = $(this).attr('id');
-    console.log(name);
-   $("#clickedName").text(name);
-   
-});
-// function findName () {
-//     var names;
-//     $('a').onclick = function() {
-//         names = this.attr('id');
-//     }
-//     return names;
-// };
-
-// $("#Brazil").click(function() {
-//         name = $(this).attr('id');
-//     })
-//     $("#Mexico").click(function() {
-//         name = $(this).attr('id');
-//     })
-//     $("#Colorado").click(function() {
-//         name = $(this).attr('id');
-//     })
